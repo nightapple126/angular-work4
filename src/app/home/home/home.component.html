@@ -1,0 +1,40 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <span>Angular Material Example</span>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+    <mat-icon>dialpad</mat-icon>
+    <span>Menu 1</span>
+  </button>
+    <button mat-menu-item disabled>
+    <mat-icon>voicemail</mat-icon>
+    <span>Menu 2</span>
+  </button>
+    <button mat-menu-item>
+    <mat-icon>notifications_off</mat-icon>
+    <span>Menu 3</span>
+  </button>
+  </mat-menu>
+</mat-toolbar>
+
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Angular</mat-card-title>
+    <mat-card-subtitle>Material 2</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://loiane.com/images/tags/angular.svg" height="300px">
+  <mat-card-content>
+    <p>
+      Material Design components for Angular
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
